@@ -39,3 +39,5 @@ MovingParticle.prototype.update = function () {
 let mp = new MovingParticle();
 mp.show(); // Inherited from Particle
 mp.update(); // Specific to MovingParticle
+
+// In console, type 'p' or 'mp' and hit enter to see the properties and the constructor they inherit from.
