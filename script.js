@@ -8,7 +8,7 @@ function Particle() {
 }
 // Adding a method to Particle's prototype.
 Particle.prototype.show = function () {
-    console.log(`Particle at x: ${this.x}, y: ${this.y}`);
+    console.log(`line 11: Particle at x: ${this.x}, y: ${this.y}`);
 };
 
 let p = new Particle();
@@ -27,7 +27,7 @@ function MovingParticle() {
 MovingParticle.prototype = Object.create(Particle.prototype);
 MovingParticle.prototype.update = function () {
     this.x += this.velocity; // Adding velocity number to x (105)
-    console.log(`Particle at x: ${this.x}, y: ${this.y}`);
+    console.log(`line 30: Particle at x: ${this.x}, y: ${this.y}`);
 }
 /* In this setup, MovingParticle inherits from Particle. Here's what happens:
 
